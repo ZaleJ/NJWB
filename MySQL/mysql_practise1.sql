@@ -249,7 +249,7 @@ and hire_date < '2010-1-1'
 ;
 -- *******************************************
 -- 题目24
-select * from employee where department_id=(
+select id, last_name, first_name, salary*12 from employee where department_id=(
 	select department_id from department where
 	location_id=(select location_id from location where city='北京')
 ) order by salary*12 desc;
