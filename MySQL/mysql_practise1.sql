@@ -7,7 +7,7 @@ create table location(
 	province varchar(25), 
 	city varchar(30), 
 	zip varchar(12)
-);
+)engine InnoDB default charset=utf8;
 -- *******************************************
 -- 题目18
 create table department(
@@ -16,7 +16,7 @@ create table department(
 	manager_id int(11),
 	location_id int(11),
 	constraint foreign key (location_id) references location(location_id)
-);
+)engine InnoDB default charset=utf8;
 -- *******************************************
 -- 题目1
 create table employee(
@@ -212,7 +212,7 @@ order by salary;
 
 
 -- 题目20
-select e.id,e.last_name,e.first_name,e.department_name
+select e.id,e.last_name,e.first_name,d.department_name
 from employee e
 left join
 department d 
