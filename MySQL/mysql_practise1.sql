@@ -160,7 +160,7 @@ select
 	last_name,
 	first_name, 
 	job_id, 
-	salary 
+	salary*12
  from employee;
 -- ********************************************
 
