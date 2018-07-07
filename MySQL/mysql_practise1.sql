@@ -90,8 +90,8 @@ insert into employee values(
 	'后名',
 	'my_email',
 	'my_phone',
-	'2018-7-1',
-	'my_job',
+	'1997-7-1',
+	'技术部',
 	8888,
 	1,
 	1,
@@ -235,24 +235,24 @@ d.location_id = l.location_id
 -- *******************************************
 
 -- 题目22
-select * from employee where 
-salary > 4000 
-and 
-department_id=(select location_id 
-	from location 
-	where city = '成都'
-	);
+select * from employee where department_id=(
+	select department_id from department where
+	location_id=(select location_id from location where city='成都')
+)
+and
+salary > 4000;
 -- *******************************************
 -- 题目23
 select * from employee where
 job_id='技术部'
-and hire_date < '2010-1-1';
+and hire_date < '2010-1-1'
+;
 -- *******************************************
 -- 题目24
 select * from employee where department_id=(
 	select department_id from department where
 	location_id=(select location_id from location where city='北京')
-) order by salary desc;
+) order by salary*12 desc;
 
 -- 题目25
 select * from employee where department_id=(
