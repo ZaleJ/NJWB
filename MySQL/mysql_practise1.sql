@@ -212,8 +212,13 @@ order by salary;
 
 
 -- 题目20
-select id,last_name,first_name,department_id
-from employee;
+select e.id,e.last_name,e.first_name,e.department_name
+from employee e
+left join
+department d 
+on
+d.department_id=e.department_id
+;
 -- *******************************************
 -- 题目21
 select e.id,e.last_name,e.first_name,e.salary,d.department_name,l.city
