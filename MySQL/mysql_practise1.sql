@@ -54,8 +54,8 @@ insert into location values(
 );
 insert into location values(
 	4,
-	'南京',
-	'南京',
+	'重庆',
+	'重庆',
 	4
 );
 insert into department values(
