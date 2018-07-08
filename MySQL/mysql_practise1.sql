@@ -255,10 +255,10 @@ select id, last_name, first_name, salary*12 from employee where department_id=(
 ) order by salary*12 desc;
 
 -- 题目25
-select * from employee where department_id=(
+select id, last_name, first_name, salary*12  from employee where department_id=(
 	select department_id from department where
 	location_id=(select location_id from location where city='上海')
-) order by salary desc;
+) order by salary*21 desc;
 
 
 
