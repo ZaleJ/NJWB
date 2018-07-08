@@ -204,9 +204,9 @@ select * from employee order by salary desc;
 -- *******************************************
 
 -- 题目17
-select id,last_name,first_name,salary
+select id,last_name,first_name,salary*12
 from employee
-order by salary;
+order by salary desc;
 -- *******************************************
 
 
