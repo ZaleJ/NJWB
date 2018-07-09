@@ -33,7 +33,7 @@ public class toDHG {
 		
 		//打印
 		for (int i : a) {
-			System.out.print(i);
+			System.out.print(i+" ");
 		}
 		System.out.println();
 	}
