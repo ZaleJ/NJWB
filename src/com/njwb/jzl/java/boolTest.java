@@ -12,8 +12,13 @@ public class boolTest {
 		flag2 = true||(i==i++);
 		System.out.println(i);
 		
-		System.out.println();
+		Integer i1 = 1000;
+		Integer i2 = 1000;
 		
+		System.out.println(i1==i2);
+		i = 1;
+		i = ~i;
+		System.out.println(i);
 		
 		
 		/*
