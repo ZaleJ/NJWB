@@ -9,12 +9,13 @@ public class toDHG {
 		
 		//初始化
 		int[] a = new int[n*2-1];
-		if (n>0) {
+		if (n>1) {
 			a[0]=1;
 			a[1]=2;
 		}else {
 			a[0]=1;
 			System.out.print(a[0]);
+			System.out.println();
 			return;
 		}
 		
@@ -34,12 +35,15 @@ public class toDHG {
 		for (int i : a) {
 			System.out.print(i);
 		}
-		
+		System.out.println();
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		plusBack(5);
+		for(int i = 1; i < 11; i++) {
+			plusBack(i);
+		}
+		
 	}
 
 }
