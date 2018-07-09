@@ -11,7 +11,9 @@ public class Class1_Type {
 		char s3 ='\'';
 		float f = 2.5f;
 		int i = (int)f;
-		System.out.println(i);
+		//System.out.println(i);
+		Byte byte1 = (byte) 1000;
+		System.out.println(byte1);
 	}
 
 }
