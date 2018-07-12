@@ -1,4 +1,4 @@
-package com.njwb.jzl.java;
+package com.njwb.jzl.java.fundamental;
 
 public class toDHG {
 	public static void plusBack(int n ) {

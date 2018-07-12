@@ -1,4 +1,4 @@
-package com.njwb.jzl.java;
+package com.njwb.jzl.java.fundamental;
 
 
 public class Class1_Type {

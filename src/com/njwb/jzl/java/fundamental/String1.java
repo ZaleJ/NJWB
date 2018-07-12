@@ -1,4 +1,4 @@
-package com.njwb.jzl.java;
+package com.njwb.jzl.java.fundamental;
 
 public class String1 {
 
@@ -22,6 +22,15 @@ public class String1 {
 		System.out.println(i+" "+j+" "+k);
 		i = 1; j = 2;
 		System.out.println(i+""+(++i));
+		
+		
+		//生成4位随机验证码
+		System.out.println((int)'A');
+		System.out.println((int)'Z');
+		System.out.println((int)'a');
+		System.out.println((int)'z');
+		System.out.println((int)'0');
+		System.out.println((int)'9');
 	}
 
 }

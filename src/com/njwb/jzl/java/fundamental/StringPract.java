@@ -1,4 +1,4 @@
-package com.njwb.jzl.java;
+package com.njwb.jzl.java.fundamental;
 
 import java.util.Scanner;
 
@@ -12,13 +12,17 @@ public class StringPract {
 		Scanner scanner = new Scanner(System.in);
 		String string = "ss";
 		switch (string) {
-		default:
-			System.out.println("yeye");
-			break;
-		case "ss":
-			System.out.println("heiheihei");
-			break;
+			default:
+				System.out.println("yeye");
+				break;
+			case "ss":
+				System.out.println("heiheihei");
+				break;
 		}
+		
+		
+		
+		
 	}
 
 }
